@@ -146,7 +146,7 @@ impl State {
 
         self.player.render(ctx);
         ctx.print(0, 0, "Press Space to Flap");
-        ctx.print(0, 10, &format!("Score: {}", self.score));
+        ctx.print(0, 2, &format!("Score: {}", self.score));
 
         // 渲染障碍
         self.obstacle.render(ctx, self.player.x);
